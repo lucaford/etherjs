@@ -8,6 +8,12 @@ const contract = new ethers.Contract(contractAddress, ERC20_ABI, provider);
 const wallet = new ethers.Wallet(privateKey1, provider);
 
 const writeContract = async () => {
+  const name = await contract.name();
+  const symbol = await contract.symbol();
+
+  console.log("contract name: ", name);
+  console.log("symbol: ", symbol);
+
   const contractWithWallet = contract.connect(wallet);
   const tx = await contractWithWallet.transfer(account2, balance);
 
