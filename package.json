@@ -1,0 +1,14 @@
+{
+  "name": "etherjs",
+  "version": "1.0.0",
+  "description": "Interact with ethereum nodes using javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luca Ford",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^5.7.1"
+  }
+}
