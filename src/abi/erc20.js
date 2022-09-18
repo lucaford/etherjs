@@ -3,4 +3,5 @@ module.exports = [
   "function symbol() view returns (string)",
   "function totalSupply() view returns (uint256)",
   "function balanceOf(address) view returns (uint)",
+  "function transfer(address to, uint amount) return (bool)",
 ];
